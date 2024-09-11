@@ -1,4 +1,5 @@
 const { Sequelize, DataTypes } = require('sequelize');
+require('dotenv').config();
 
 // creating a sequalize instance 
 const sequelize = new Sequelize('Car_rental', 'postgres', 'Aditya123', {
@@ -46,8 +47,9 @@ const User = sequelize.define(
     phoneNumber: {
       type: DataTypes.STRING,
     },
-    age: {
-      type: DataTypes.STRING,
+    hasDrivinigLicence:{
+     type : DataTypes.BOOLEAN,
+     allowNull : false
     },
     pickupLocation : {
       type: DataTypes.STRING,
@@ -77,6 +79,10 @@ const Car = sequelize.define('Car', {
             type: DataTypes.DECIMAL(10, 2),
             allowNull: false,
         },
+        location : {
+           type: DataTypes.STRING,
+           allowNull : false
+        }, 
         isAvailable: {
             type: DataTypes.BOOLEAN,
             defaultValue: true,
@@ -108,9 +114,9 @@ const booking = sequelize.define('Rent', {
 
 
 // Synchronize all models with the database
-sequelize.sync({ alter: true })
-  .then(() => console.log('tables created!'))
-  .catch(err => console.log('Error syncing database:', err));
+// sequelize.sync({ alter: true })
+//   .then(() => console.log('tables created!'))
+//   .catch(err => console.log('Error syncing database:', err));
 User.hasMany(booking);
 booking.belongsTo(User);
 
