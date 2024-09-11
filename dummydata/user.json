@@ -1,0 +1,72 @@
+[
+  {
+    "firstName": "Aditya",
+    "lastName": "Lowanshi",
+    "email": "adi@gmail.com",
+    "password": "aditya123",
+    "phoneNumber": "9617081289"
+  },
+  {
+    "firstName": "Priya",
+    "lastName": "Sharma",
+    "email": "priya.sharma@hotmail.com",
+    "password": "PriyaS2024!",
+    "phoneNumber": "8876543210"
+  },
+  {
+    "firstName": "Rahul",
+    "lastName": "Patel",
+    "email": "rahul.p@yahoo.com",
+    "password": "RahulP@ssw0rd",
+    "phoneNumber": "7654321098"
+  },
+  {
+    "firstName": "Neha",
+    "lastName": "Gupta",
+    "email": "neha.gupta@outlook.com",
+    "password": "Neha1234#",
+    "phoneNumber": "9876123450"
+  },
+  {
+    "firstName": "Amit",
+    "lastName": "Singh",
+    "email": "amit.singh@gmail.com",
+    "password": "AmitS!ngh2024",
+    "phoneNumber": "8765432109"
+  },
+  {
+    "firstName": "Sneha",
+    "lastName": "Reddy",
+    "email": "sneha.r@yahoo.in",
+    "password": "SnehaR3ddy!",
+    "phoneNumber": "9988776655"
+  },
+  {
+    "firstName": "Vikram",
+    "lastName": "Mehta",
+    "email": "vikram.m@gmail.com",
+    "password": "V!kram2024",
+    "phoneNumber": "7788990011"
+  },
+  {
+    "firstName": "Anita",
+    "lastName": "Desai",
+    "email": "anita.desai@hotmail.com",
+    "password": "An!taD3sai",
+    "phoneNumber": "8899001122"
+  },
+  {
+    "firstName": "Rajesh",
+    "lastName": "Kumar",
+    "email": "rajesh.kumar@outlook.com",
+    "password": "RajeshK@2024",
+    "phoneNumber": "7766554433"
+  },
+  {
+    "firstName": "Pooja",
+    "lastName": "Verma",
+    "email": "pooja.v@yahoo.com",
+    "password": "P00jaVerma!",
+    "phoneNumber": "9900112233"
+  }
+]

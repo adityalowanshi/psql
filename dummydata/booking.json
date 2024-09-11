@@ -1,0 +1,92 @@
+[
+  {
+    "bookingId": "B001",
+    "carId": "C001",
+    "userId": "U001",
+    "startDate": "2024-09-15",
+    "endDate": "2024-09-18",
+    "pickupLocation": "New York City Airport",
+    "dropLocation": "New York City Downtown"
+  },
+  {
+    "bookingId": "B002",
+    "carId": "C003",
+    "userId": "U005",
+    "startDate": "2024-09-20",
+    "endDate": "2024-09-25",
+    "pickupLocation": "Los Angeles International Airport",
+    "dropLocation": "Santa Monica"
+  },
+  {
+    "bookingId": "B003",
+    "carId": "C007",
+    "userId": "U003",
+    "startDate": "2024-10-01",
+    "endDate": "2024-10-03",
+    "pickupLocation": "Chicago O'Hare Airport",
+    "dropLocation": "Chicago O'Hare Airport"
+  },
+  {
+    "bookingId": "B004",
+    "carId": "C002",
+    "userId": "U008",
+    "startDate": "2024-10-05",
+    "endDate": "2024-10-10",
+    "pickupLocation": "Miami Beach",
+    "dropLocation": "Miami International Airport"
+  },
+  {
+    "bookingId": "B005",
+    "carId": "C009",
+    "userId": "U002",
+    "startDate": "2024-10-15",
+    "endDate": "2024-10-18",
+    "pickupLocation": "San Francisco International Airport",
+    "dropLocation": "San Jose"
+  },
+  {
+    "bookingId": "B006",
+    "carId": "C005",
+    "userId": "U007",
+    "startDate": "2024-11-01",
+    "endDate": "2024-11-05",
+    "pickupLocation": "Boston Logan Airport",
+    "dropLocation": "Boston Logan Airport"
+  },
+  {
+    "bookingId": "B007",
+    "carId": "C011",
+    "userId": "U004",
+    "startDate": "2024-11-10",
+    "endDate": "2024-11-12",
+    "pickupLocation": "Seattle-Tacoma International Airport",
+    "dropLocation": "Downtown Seattle"
+  },
+  {
+    "bookingId": "B008",
+    "carId": "C008",
+    "userId": "U009",
+    "startDate": "2024-11-20",
+    "endDate": "2024-11-25",
+    "pickupLocation": "Atlanta Hartsfield-Jackson Airport",
+    "dropLocation": "Atlanta Hartsfield-Jackson Airport"
+  },
+  {
+    "bookingId": "B009",
+    "carId": "C004",
+    "userId": "U006",
+    "startDate": "2024-12-01",
+    "endDate": "2024-12-05",
+    "pickupLocation": "Las Vegas McCarran Airport",
+    "dropLocation": "Las Vegas Strip"
+  },
+  {
+    "bookingId": "B010",
+    "carId": "C010",
+    "userId": "U010",
+    "startDate": "2024-12-15",
+    "endDate": "2024-12-20",
+    "pickupLocation": "Orlando International Airport",
+    "dropLocation": "Walt Disney World Resort"
+  }
+]

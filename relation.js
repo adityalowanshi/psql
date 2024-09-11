@@ -6,16 +6,6 @@ const sequelize = new Sequelize('car_rent','postgres', 'Aditya123', {
   dialect: 'postgres',
 });
 
-const connection = async () => {
-  try {
-    await sequelize.authenticate();
-    console.log('Connection has been established successfully.');
-  } catch (error) {
-    console.error('Unable to connect to the database:', error);
-    throw error;
-  }
-};
-
 const User = sequelize.define('User', {
   id: {
     type: DataTypes.INTEGER,
@@ -32,7 +22,7 @@ const User = sequelize.define('User', {
   },
   email: {
     type: DataTypes.STRING,
-    allowNull: false,
+    allowNull: false,         // {firstname, lastname, email, password, phoneNumber }
     unique: true,
   },
   password: {
@@ -42,10 +32,6 @@ const User = sequelize.define('User', {
   phoneNumber: {
     type: DataTypes.STRING,
   },
-  pickupLocation: {
-    type: DataTypes.ENUM(['ISBT','LALGHATI','MISROD','ARERA COLONY']),
-    allowNull: false
-  }
 });
 
 const Car = sequelize.define('Car', {
@@ -62,10 +48,6 @@ const Car = sequelize.define('Car', {
     type: DataTypes.STRING,
     allowNull: false,
   },
-  color: {
-    type: DataTypes.STRING,
-    allowNull: true,
-  },
   dailyRate: {
     type: DataTypes.DECIMAL(10, 2),
     allowNull: false,
@@ -78,6 +60,9 @@ const Car = sequelize.define('Car', {
     type: DataTypes.BOOLEAN,
     defaultValue: true,
   },
+  numberPlate:{
+    type: DataTypes.STRING
+  }
 });
 
 const booking = sequelize.define('Rent', {
@@ -85,6 +70,8 @@ const booking = sequelize.define('Rent', {
     type: DataTypes.INTEGER,
     primaryKey: true,
     autoIncrement: true,
+  uid:{
+    type:DataTypes.INTEGER}
   },
   startDate: {
     type: DataTypes.DATE,
@@ -112,11 +99,7 @@ const booking = sequelize.define('Rent', {
   }
 });
 
-// model synchronisation
-
-// sequelize.sync({alter : true}).then(()=> console.log("models synched "))
-
-// relationships 
+// sequelize.sync({alter :true}).then(()=> console.log("model synchronisation is done"))
 
 User.hasMany(booking);
 booking.belongsTo(User);
@@ -128,5 +111,5 @@ module.exports = {
   User,
   Car,
   booking,
-  connection,
+  sequelize,
 };

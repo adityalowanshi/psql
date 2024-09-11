@@ -1,0 +1,139 @@
+[
+  {
+    "make": "Toyota",
+    "model": "Corolla",
+    "dailyRate": 45.99,
+    "location": "New York City",
+    "isAvailable": true,
+    "numberPlate": "NYC-1234"
+  },
+  {
+    "make": "Honda",
+    "model": "Civic",
+    "dailyRate": 42.50,
+    "location": "Los Angeles",
+    "isAvailable": false,
+    "numberPlate": "LA-5678"
+  },
+  {
+    "make": "Ford",
+    "model": "Mustang",
+    "dailyRate": 65.00,
+    "location": "Miami",
+    "isAvailable": true,
+    "numberPlate": "MIA-9012"
+  },
+  {
+    "make": "Chevrolet",
+    "model": "Malibu",
+    "dailyRate": 48.75,
+    "location": "Chicago",
+    "isAvailable": true,
+    "numberPlate": "CHI-3456"
+  },
+  {
+    "make": "Nissan",
+    "model": "Altima",
+    "dailyRate": 47.25,
+    "location": "Houston",
+    "isAvailable": false,
+    "numberPlate": "HOU-7890"
+  }
+  ,
+  {
+    "make": "Toyota",
+    "model": "Corolla",
+    "dailyRate": 45.99,
+    "location": "New York City",
+    "isAvailable": true,
+    "numberPlate": "NYC-1234"
+  },
+  {
+    "make": "Honda",
+    "model": "Civic",
+    "dailyRate": 42.50,
+    "location": "Los Angeles",
+    "isAvailable": false,
+    "numberPlate": "LA-5678"
+  },
+  {
+    "make": "Ford",
+    "model": "Mustang",
+    "dailyRate": 65.00,
+    "location": "Miami",
+    "isAvailable": true,
+    "numberPlate": "MIA-9012"
+  },
+  {
+    "make": "Chevrolet",
+    "model": "Malibu",
+    "dailyRate": 48.75,
+    "location": "Chicago",
+    "isAvailable": true,
+    "numberPlate": "CHI-3456"
+  },
+  {
+    "make": "Nissan",
+    "model": "Altima",
+    "dailyRate": 47.25,
+    "location": "Houston",
+    "isAvailable": false,
+    "numberPlate": "HOU-7890"
+  },
+  {
+    "make": "Volkswagen",
+    "model": "Golf",
+    "dailyRate": 50.00,
+    "location": "San Francisco",
+    "isAvailable": true,
+    "numberPlate": "SF-2468"
+  },
+  {
+    "make": "BMW",
+    "model": "3 Series",
+    "dailyRate": 75.50,
+    "location": "Boston",
+    "isAvailable": true,
+    "numberPlate": "BOS-1357"
+  },
+  {
+    "make": "Mercedes-Benz",
+    "model": "C-Class",
+    "dailyRate": 80.00,
+    "location": "Washington D.C.",
+    "isAvailable": false,
+    "numberPlate": "DC-9876"
+  },
+  {
+    "make": "Audi",
+    "model": "A4",
+    "dailyRate": 72.25,
+    "location": "Seattle",
+    "isAvailable": true,
+    "numberPlate": "SEA-5432"
+  },
+  {
+    "make": "Hyundai",
+    "model": "Elantra",
+    "dailyRate": 40.00,
+    "location": "Atlanta",
+    "isAvailable": true,
+    "numberPlate": "ATL-8765"
+  },
+  {
+    "make": "Kia",
+    "model": "Optima",
+    "dailyRate": 43.75,
+    "location": "Denver",
+    "isAvailable": false,
+    "numberPlate": "DEN-2109"
+  },
+  {
+    "make": "Mazda",
+    "model": "CX-5",
+    "dailyRate": 55.50,
+    "location": "Phoenix",
+    "isAvailable": true,
+    "numberPlate": "PHX-6543"
+  }
+  ]
