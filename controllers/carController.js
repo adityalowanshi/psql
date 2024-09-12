@@ -1,7 +1,7 @@
 const { Car } = require('../relation');
 const postCar = async (req, res)=>{
     try {
-        const { id, make, model, dailyRate, location, isAvailable, numberPlate } = req.body;
+        const {make, model, dailyRate, location, isAvailable, numberPlate } = req.body;
         const existingCar = await Car.findOne({ where: { numberPlate : numberPlate}});
         if (existingCar) {
             return res.status(400).json({ message: 'Car already exists' });

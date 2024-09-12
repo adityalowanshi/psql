@@ -2,31 +2,38 @@ const { booking,Car } = require('../relation');
 // get all user bookings
 const getAllBooking = async (req, res) => {
   try {
-    const {id} = req.body;
+    const {uId} = req.body;
     const bookings = await booking.findAll({
-      where: { id: uid },
+      where: {uId : uId },
     });
     res.json(bookings);
   } catch (error) {
-    res.status(400).json({ error: error.message });
+    res.status(400).json({ message: "error in booking" });
   }
 };
 // create a booking
 const makeBooking = async (req, res) => {
   try {
-    const { carId,days,pickupLocation, dropLocation} = req.body;
+    const { carId,uId,days,pickupLocation,dropLocation} = req.body;
+
     const car = await Car.findByPk(carId);
 
     if (!car || !car.isAvailable) {
       return res.status(400).json({ message: "Car not available" });
     }
-    if(!check){res.status(200).json({ message: "Please enter the Predecided locations" })}
-  
+    //  const check = ( pickupLocation)=> pickupLocation === car.location
+    // if(!check){res.status(200).json({ message: "Please enter the Predecided locations" })};
+    const startDate = new Date();
+    const endDate = new Date(startDate.getTime() + days * 24 * 60 * 60 * 1000);
+
+    const totalCost = calculateCost(car.dailyRate, startDate, endDate);
+
     const rental = await booking.create({
-      CarId: carId,
+      carId,
+      uId,
       startDate,
       endDate,
-      totalCost:calculateCost(car.dailyRate,days),
+      totalCost,
       pickupLocation,
       dropLocation
     });
@@ -38,11 +45,10 @@ const makeBooking = async (req, res) => {
   }
 };
 
-function calculateCost(dailyRate, days) {
-
-  const day = (end - start)/(1000*60*60*24);
-  if(days<1) {days = 1 };
-  return dailyRate * day;
+function calculateCost(dailyRate, startDate, endDate) {
+  const dayDifference = (endDate -startDate) / (1000*60*60* 4);
+  const days = Math.max(dayDifference,1); 
+  return dailyRate * days;
 }
 
 

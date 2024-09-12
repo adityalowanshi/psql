@@ -82,12 +82,8 @@ const booking = sequelize.define('Rent', {
     allowNull: false,
   },
   totalCost: {
-    type: DataTypes.INTEGER,
+    type: DataTypes.FLOAT,
     allowNull: false,
-  },
-  status: {
-    type: DataTypes.ENUM('active', 'completed', 'cancelled'),
-    defaultValue: 'active',
   },
   pickupLocation:{
     type:DataTypes.STRING,

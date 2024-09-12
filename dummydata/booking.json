@@ -1,92 +1,72 @@
 [
   {
-    "bookingId": "B001",
-    "carId": "C001",
-    "userId": "U001",
-    "startDate": "2024-09-15",
-    "endDate": "2024-09-18",
-    "pickupLocation": "New York City Airport",
-    "dropLocation": "New York City Downtown"
+    "carId": 1,
+    "userId": 1,
+    "days": 3,
+    "pickupLocation": "Indore Airport",
+    "dropLocation": "Rajwada Palace, Indore"
   },
   {
-    "bookingId": "B002",
-    "carId": "C003",
-    "userId": "U005",
-    "startDate": "2024-09-20",
-    "endDate": "2024-09-25",
-    "pickupLocation": "Los Angeles International Airport",
-    "dropLocation": "Santa Monica"
+    "carId": 2,
+    "userId": 2,
+    "days": 5,
+    "pickupLocation": "Indore Railway Station",
+    "dropLocation": "Sarafa Bazaar, Indore"
   },
   {
-    "bookingId": "B003",
-    "carId": "C007",
-    "userId": "U003",
-    "startDate": "2024-10-01",
-    "endDate": "2024-10-03",
-    "pickupLocation": "Chicago O'Hare Airport",
-    "dropLocation": "Chicago O'Hare Airport"
+    "carId": 3,
+    "userId": 1,
+    "days": 2,
+    "pickupLocation": "Holkar Stadium",
+    "dropLocation": "Indore Airport"
   },
   {
-    "bookingId": "B004",
-    "carId": "C002",
-    "userId": "U008",
-    "startDate": "2024-10-05",
-    "endDate": "2024-10-10",
-    "pickupLocation": "Miami Beach",
-    "dropLocation": "Miami International Airport"
+    "carId": 4,
+    "userId": 3,
+    "days": 7,
+    "pickupLocation": "Daly College",
+    "dropLocation": "Khajrana Ganesh Temple"
   },
   {
-    "bookingId": "B005",
-    "carId": "C009",
-    "userId": "U002",
-    "startDate": "2024-10-15",
-    "endDate": "2024-10-18",
-    "pickupLocation": "San Francisco International Airport",
-    "dropLocation": "San Jose"
+    "carId": 5,
+    "userId": 4,
+    "days": 1,
+    "pickupLocation": "Brilliant Convention Centre",
+    "dropLocation": "Lalbagh Palace"
   },
   {
-    "bookingId": "B006",
-    "carId": "C005",
-    "userId": "U007",
-    "startDate": "2024-11-01",
-    "endDate": "2024-11-05",
-    "pickupLocation": "Boston Logan Airport",
-    "dropLocation": "Boston Logan Airport"
+    "carId": 2,
+    "userId": 5,
+    "days": 4,
+    "pickupLocation": "Phoenix Citadel Mall",
+    "dropLocation": "Indore Zoo"
   },
   {
-    "bookingId": "B007",
-    "carId": "C011",
-    "userId": "U004",
-    "startDate": "2024-11-10",
-    "endDate": "2024-11-12",
-    "pickupLocation": "Seattle-Tacoma International Airport",
-    "dropLocation": "Downtown Seattle"
+    "carId": 1,
+    "userId": 3,
+    "days": 6,
+    "pickupLocation": "Central Museum Indore",
+    "dropLocation": "Indore Railway Station"
   },
   {
-    "bookingId": "B008",
-    "carId": "C008",
-    "userId": "U009",
-    "startDate": "2024-11-20",
-    "endDate": "2024-11-25",
-    "pickupLocation": "Atlanta Hartsfield-Jackson Airport",
-    "dropLocation": "Atlanta Hartsfield-Jackson Airport"
+    "carId": 3,
+    "userId": 2,
+    "days": 2,
+    "pickupLocation": "Pipliyapala Regional Park",
+    "dropLocation": "Nehru Stadium"
   },
   {
-    "bookingId": "B009",
-    "carId": "C004",
-    "userId": "U006",
-    "startDate": "2024-12-01",
-    "endDate": "2024-12-05",
-    "pickupLocation": "Las Vegas McCarran Airport",
-    "dropLocation": "Las Vegas Strip"
+    "carId": 4,
+    "userId": 5,
+    "days": 3,
+    "pickupLocation": "Patalpani Waterfall",
+    "dropLocation": "Indore Airport"
   },
   {
-    "bookingId": "B010",
-    "carId": "C010",
-    "userId": "U010",
-    "startDate": "2024-12-15",
-    "endDate": "2024-12-20",
-    "pickupLocation": "Orlando International Airport",
-    "dropLocation": "Walt Disney World Resort"
+    "carId": 5,
+    "userId": 4,
+    "days": 5,
+    "pickupLocation": "Ralamandal Wildlife Sanctuary",
+    "dropLocation": "Crystal IT Park"
   }
 ]
