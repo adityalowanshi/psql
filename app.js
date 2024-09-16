@@ -1,16 +1,16 @@
 const express = require('express');
 const app = express();
-const cors = require('cors')
 const connection = require('./connection.js');
 const {getAllUsers,registerUser} = require('./controllers/userController')
 const {getAllBooking, makeBooking} = require('./controllers/bookingController')
 const { getAllCars ,postCar} = require('./controllers/carController.js')
-
 app.use(express.json());
 
 const port = process.env.PORT || 3000;
 
 app.get('/', (req, res) => res.send('Hello ,This is car rental platform'));
+
+// syncDb();
 //start server and connect with postgres
 const startServer = async () => {
   try {
@@ -35,7 +35,7 @@ app.get('/users',getAllUsers);
 //1. POST: booking 
 app.post('/booking',makeBooking);
 // 2. GET bookings of a user
-app.get('/users/:userId/bookings',getAllBooking);
+app.get('/users/bookings',getAllBooking);
 
 // Car endpoints
 // 1. GET: car details

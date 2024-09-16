@@ -1,4 +1,4 @@
-const {sequelize} = require('./relation')
+const {sequelize} = require('./database/db')
 const connection = async () => {
   try {
     await sequelize.authenticate();
@@ -8,4 +8,4 @@ const connection = async () => {
     throw error;
   }
 };
-module.exports = connection; 
+module.exports = connection;

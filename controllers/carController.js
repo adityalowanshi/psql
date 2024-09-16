@@ -1,4 +1,6 @@
-const { Car } = require('../relation');
+//const { Car } = require('../relation');
+const { Car } = require('../models/carModel');
+
 const postCar = async (req, res)=>{
     try {
         const {make, model, dailyRate, location, isAvailable, numberPlate } = req.body;
